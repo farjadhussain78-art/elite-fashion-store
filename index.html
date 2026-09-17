@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Premium Fashion Store</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="top-banner">🚚 Free Shipping on orders above Rs.5000 | 📦 Cash on Delivery available all over Pakistan</div>
+	<header>
+		<div class="navbar-container">
+			<a class="nav-logo" href="#" aria-label="Elite Fashion home">ELITE FASHION</a>
+
+			<nav class="nav-menu" aria-label="Main navigation">
+				<a href="#products" data-category="All">Home</a>
+				<a href="#products" data-category="Handbags">Handbags</a>
+				<a href="#products" data-category="Sunglasses">Sunglasses</a>
+				<a href="#products" data-category="Watches">Watches</a>
+				<a href="#products" data-category="Perfumes">Perfumes</a>
+				<a href="#products" data-category="Fashion Accessories">Accessories</a>
+			</nav>
+
+			<div class="nav-actions">
+				<button class="search-btn" type="button" aria-label="Search">
+					<i class="fa-solid fa-search" aria-hidden="true"></i>
+				</button>
+				<a class="login-link" href="#login" aria-label="Log in">
+					<i class="fa-solid fa-user" aria-hidden="true"></i>
+				</a>
+				<a class="cart-btn" href="#cart" aria-label="Shopping bag, 0 items">
+					<i class="fa-solid fa-shopping-bag" aria-hidden="true"></i>
+					<span class="cart-badge">0</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="hero-slider" aria-label="Featured collections">
+		<div class="slider-track">
+			<section class="slide" data-image="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=2000&q=85" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=2000&q=85');">
+				<div class="slide-content">
+					<h5>NEW ARRIVALS</h5>
+					<h1>It's not about brand, it's only about style</h1>
+					<a class="btn-shop" href="#products">Shop Now</a>
+				</div>
+			</section>
+
+			<section class="slide" data-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2000&q=85" style="background-image: url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2000&q=85');">
+				<div class="slide-content">
+					<h5>ELEVATE YOUR LOOK</h5>
+					<h1>Discover Luxury Accessories</h1>
+					<a class="btn-shop" href="#products">Shop Now</a>
+				</div>
+			</section>
+		</div>
+
+		<button class="slider-arrow prev-arrow" type="button" aria-label="Previous slide">
+			<i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+		</button>
+		<button class="slider-arrow next-arrow" type="button" aria-label="Next slide">
+			<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+		</button>
+	</main>
+
+	<section id="categories" class="category-section" aria-labelledby="category-heading">
+		<div class="category-container">
+			<div class="section-heading">
+				<h2 id="category-heading">Shop By Category</h2>
+				<p class="section-subtitle">Explore our premium handpicked collections</p>
+			</div>
+
+			<div class="category-grid">
+				<a href="#products" class="category-card" data-category="Handbags">
+					<img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85" alt="Premium handbags">
+					<div class="cat-overlay">
+						<h3>Premium Handbags</h3>
+					</div>
+				</a>
+
+				<a href="#products" class="category-card" data-category="Sunglasses">
+					<img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85" alt="Classic sunglasses">
+					<div class="cat-overlay">
+						<h3>Classic Sunglasses</h3>
+					</div>
+				</a>
+
+				<a href="#products" class="category-card" data-category="Watches">
+					<img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85" alt="Luxury watches">
+					<div class="cat-overlay">
+						<h3>Luxury Watches</h3>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="products" class="products-section" aria-labelledby="products-heading">
+		<div class="products-container">
+			<div class="section-heading">
+				<h2 id="products-heading">New Products</h2>
+				<p class="section-subtitle">Our latest premium trending items</p>
+			</div>
+
+			<div class="products-grid" id="productsGrid"></div>
+		</div>
+	</section>
+
+	<section class="trust-review-section" aria-labelledby="reviews-heading">
+		<div class="trust-badges" aria-label="Why shop with Elite Fashion">
+			<div class="trust-badge">
+				<i class="fa-solid fa-truck" aria-hidden="true"></i>
+				<span>Free Delivery</span>
+			</div>
+			<div class="trust-badge">
+				<i class="fa-solid fa-award" aria-hidden="true"></i>
+				<span>Pakistan's #1 Premium Choice</span>
+			</div>
+			<div class="trust-badge">
+				<i class="fa-solid fa-undo" aria-hidden="true"></i>
+				<span>Easy 7 Days Return</span>
+			</div>
+		</div>
+
+		<div class="reviews-container">
+			<div class="review-summary">
+				<p class="review-eyebrow">CUSTOMER LOVE</p>
+				<h2 id="reviews-heading">Loved by shoppers</h2>
+				<strong class="review-rating">4.9</strong>
+				<div class="review-stars" aria-label="4.9 out of 5 stars">
+					<i class="fa-solid fa-star" aria-hidden="true"></i>
+					<i class="fa-solid fa-star" aria-hidden="true"></i>
+					<i class="fa-solid fa-star" aria-hidden="true"></i>
+					<i class="fa-solid fa-star" aria-hidden="true"></i>
+					<i class="fa-solid fa-star" aria-hidden="true"></i>
+				</div>
+				<span>Based on 250+ verified reviews</span>
+			</div>
+
+			<div class="reviews-grid">
+				<article class="review-card">
+					<img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=240&q=80" alt="Quilted handbag from Elite Fashion">
+					<div class="review-card-content">
+						<div class="review-card-stars" aria-label="5 out of 5 stars">★★★★★</div>
+						<p>"Top class hai yaar"</p>
+						<strong>Usama Salman Ali</strong>
+					</div>
+				</article>
+
+				<article class="review-card">
+					<img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=240&q=80" alt="Premium sunglasses from Elite Fashion">
+					<div class="review-card-content">
+						<div class="review-card-stars" aria-label="5 out of 5 stars">★★★★★</div>
+						<p>"Packing was very good"</p>
+						<strong>Amir</strong>
+					</div>
+				</article>
+
+				<article class="review-card">
+					<img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=240&q=80" alt="Rose gold watch from Elite Fashion">
+					<div class="review-card-content">
+						<div class="review-card-stars" aria-label="5 out of 5 stars">★★★★★</div>
+						<p>"Quality bilkul premium hai"</p>
+						<strong>Atif Shah</strong>
+					</div>
+				</article>
+
+				<article class="review-card">
+					<img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=240&q=80" alt="Luxury perfume from Elite Fashion">
+					<div class="review-card-content">
+						<div class="review-card-stars" aria-label="5 out of 5 stars">★★★★★</div>
+						<p>"Will shop again for sure"</p>
+						<strong>Haneef Khan</strong>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<div class="cart-overlay" aria-hidden="true"></div>
+	<aside class="cart-sidebar" aria-label="Shopping cart">
+		<div class="cart-header">
+			<h3>Your Cart</h3>
+			<button class="btn-close-cart" type="button" aria-label="Close cart">
+				<i class="fa-solid fa-times" aria-hidden="true"></i>
+			</button>
+		</div>
+
+		<div class="cart-body">
+			<div class="cart-empty-msg">
+				<p>Your cart is currently empty.</p>
+				<span>Rs. 0</span>
+			</div>
+		</div>
+
+		<div class="cart-footer">
+			<div class="cart-subtotal">
+				<span>Subtotal:</span>
+				<span class="cart-total-value">₨ 0</span>
+			</div>
+			<a class="btn-checkout" href="#checkout">Proceed to Checkout</a>
+		</div>
+	</aside>
+
+	<div class="checkout-modal" aria-hidden="true">
+		<div class="checkout-box" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+			<div class="checkout-header">
+				<h3 id="checkout-title">Complete Your Order (Cash on Delivery)</h3>
+				<button class="btn-close-checkout" type="button" aria-label="Close checkout">
+					<i class="fa-solid fa-times" aria-hidden="true"></i>
+				</button>
+			</div>
+
+			<form id="codForm">
+				<div class="form-group">
+					<label for="full-name">Full Name</label>
+					<input id="full-name" name="fullName" type="text" placeholder="Enter your full name" required>
+				</div>
+
+				<div class="form-group">
+					<label for="mobile-number">Mobile Number</label>
+					<input id="mobile-number" name="mobileNumber" type="tel" placeholder="Enter your phone number (e.g., 03001234567)" required>
+				</div>
+
+				<div class="form-group">
+					<label for="city">City</label>
+					<select id="city" name="city" required>
+						<option value="" disabled selected>Select your city</option>
+						<option value="Karachi">Karachi</option>
+						<option value="Lahore">Lahore</option>
+						<option value="Islamabad">Islamabad</option>
+						<option value="Rawalpindi">Rawalpindi</option>
+						<option value="Faisalabad">Faisalabad</option>
+						<option value="Multan">Multan</option>
+						<option value="Peshawar">Peshawar</option>
+						<option value="Quetta">Quetta</option>
+						<option value="Sialkot">Sialkot</option>
+						<option value="Gujranwala">Gujranwala</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="shipping-address">Full Shipping Address</label>
+					<input id="shipping-address" name="shippingAddress" type="text" placeholder="Apartment, Street Name, Sector/Area" required>
+				</div>
+
+				<button class="btn-place-order" type="submit">Confirm Order (Pay on Delivery)</button>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer-grid">
+			<div class="footer-col">
+				<h3>CATEGORIES</h3>
+				<a href="#products">Handbags</a>
+				<a href="#products">Sunglasses</a>
+				<a href="#products">Watches</a>
+				<a href="#products">Perfumes</a>
+			</div>
+			<div class="footer-col">
+				<h3>QUICK LINKS</h3>
+				<a href="#about">About Us</a>
+				<a href="#contact">Contact Us</a>
+				<a href="#shipping">Shipping Policy</a>
+				<a href="#returns">Return Policy</a>
+			</div>
+			<div class="footer-col">
+				<h3>INFORMATION</h3>
+				<span>WhatsApp: +92 317 0133398</span>
+				<span>Landline: +92 21 34567890</span>
+				<span>Gulshan-e-Iqbal, Karachi</span>
+			</div>
+			<div class="footer-col footer-newsletter">
+				<h3>NEWSLETTER SIGN UP</h3>
+				<form class="newsletter-form">
+					<input type="email" placeholder="enter your email address" aria-label="Email address" required>
+					<button class="btn-news" type="submit">SUBMIT</button>
+				</form>
+				<div class="social-links" aria-label="Social media links">
+					<a href="#facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+					<a href="#instagram" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<span>&copy; 2026 Elite Fashion. All rights reserved.</span>
+			<div class="payment-badges" aria-label="Accepted payment methods">
+				<span><i class="fa-brands fa-cc-visa" aria-hidden="true"></i> Visa</span>
+				<span><i class="fa-brands fa-cc-mastercard" aria-hidden="true"></i> Mastercard</span>
+				<span><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i> Cash on Delivery</span>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
